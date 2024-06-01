@@ -13,7 +13,7 @@ Users should be able to see hover and focus states for all interactive elements 
 
 ## Screenshot
 
-![alt='My screenghot'](/assets/Screenshot.png)
+![alt='My screenghot'](assets/Screenshot.png)
 
 ## Built with
 
