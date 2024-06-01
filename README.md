@@ -3,7 +3,7 @@ Hello, everyone! My name is Andrew Martynenko (Andrei Martinenko), and I am a be
 Willing to listen to any feedback. Especially comments and suggestions on how to improve the code. If you have critical remarks, I am ready for them too. 
 I like when people criticise my work reasonably, such criticism makes me better ;)
 
-This folder contains my solutions for [Frontend Mentor site challenges] (https://www.frontendmentor.io). 
+This folder contains my solutions for [Frontend Mentor site challenges](https://www.frontendmentor.io). 
 
 List of solutions (new solutions at the beginning of the list):
 - [Stats preview card component] (https://github.com/AxinitM/Frontend-Mentor/tree/main/Stats-preview-card-component), May 2024;
