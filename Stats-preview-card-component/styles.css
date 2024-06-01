@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+  /* COLORS */
+  /* ### Primary */
+  /* (main background) */
+  --VeryDarkBlue: hsl(233, 47%, 7%);
+  /* (card background) */
+  --DarkDesaturatedBlue: hsl(244, 38%, 16%);
+  /* (accent) */
+  --SoftViolet: hsla(277, 64%, 61%, 0.5);
+
+  /* ### Neutral */
+  /* (main heading, stats) */
+  --White: hsl(0, 0%, 100%);
+  /* main paragraph */
+  --MainParagraphColor: hsla(0, 0%, 100%, 0.75);
+  /* (stat headings) */
+  --StatHeadingsColor: hsla(0, 0%, 100%, 0.6);
+
+  /* FONTS */
+  --PrimaryFont: "Inter", sans-serif;
+  --SecondaryFont: "Lexend Deca", sans-serif;
+}
+
+/* Main Block */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  /* height: 100vh; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--PrimaryFont);
+  font-size: 15px;
+  background-color: var(--VeryDarkBlue);
+}
+
+.container {
+  display: flex;
+  width: 75vw;
+  /* width: 900px; изменяет соотн половин, режет картинку */
+  border: 1px solid var(--VeryDarkBlue);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: var(--White);
+}
+
+h1 > span {
+  color: var(--SoftViolet);
+}
+
+.left,
+.right-img {
+  flex: 1;
+  padding: 40px;
+  width: 50%;
+  color: var(--MainParagraphColor);
+  background-color: var(--DarkDesaturatedBlue);
+  position: relative;
+}
+
+.left {
+  flex-direction: column;
+}
+
+.right-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position: top;  */
+}
+
+.right-img::after {
+  content: "";
+  position: absolute;
+  /* display:block; tips особо не влияет*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--SoftViolet);
+}
+
+.main-text {
+  line-height: 2em;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.statistic {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.column {
+  padding-right: 50px;
+}
+
+.stat-num,
+.stat-text {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+}
+
+.stat-num {
+  font-size: 2em;
+  color: var(--White);
+  font-family: var(--PrimaryFont);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stat-text {
+  color: var(--MainParagraphColor);
+  font-family: var(--SecondaryFont);
+  text-transform: uppercase;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 50px;
+  color: var(--White);
+}
+
+.attribution a {
+  color: var(--SoftViolet);
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding-top: 60px;
+    }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  .left,
+  .right-img {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .right-img {
+    order: -1;
+  }
+
+  .right-img::after {
+    content: "";
+    position: absolute;
+    translate:0 20px;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: 86%;
+    background-color: var(--SoftViolet);
+  }
+
+  .right-img img {
+    position: relative;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .main-text {
+    line-height: 1.6em;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 0 12px 15px 12px;
+    
+  }
+
+  .statistic {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left:40px;
+    padding-top: 0px;
+  }
+
+  .column {
+    padding-bottom: 25px;
+    font-size: 0.8em;
+  }
+
+  .attribution {
+    display: none;
+  }
+}
