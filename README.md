@@ -1,4 +1,4 @@
-Hello, everyone! My name is Andrey Martynenko, and I am a beginner frontender. 
+Hello, everyone! My name is Andrew Martynenko (Andrei Martinenko), and I am a beginner frontender. 
 
 Willing to listen to any feedback. Especially comments and suggestions on how to improve the code. If you have critical remarks, I am ready for them too. 
 I like when people criticise my work reasonably, such criticism makes me better ;)
