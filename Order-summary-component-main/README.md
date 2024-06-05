@@ -17,7 +17,7 @@ Users should be able to see hover states for interactive elements
 
 ### Screenshot
 
-[](./images/Screenshot.png)
+![](images/Screenshot.png)
 
 
 ### Links
