@@ -1,0 +1,190 @@
+:root {
+  /* Primary Colors */
+  --accentTextColor: hsl(215, 51%, 70%);
+  --accentHoverColor: hsl(178, 100%, 50%);
+
+  /* Neutral Colors */
+  --VeryDarkBlueMainBG: hsl(217, 54%, 11%);
+  --VeryDarkBlueCardBG: hsl(216, 50%, 16%);
+  --VeryDarkBlueLine: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --AttributionColor: hsl(228, 45%, 44%);
+
+  /* fonts */
+  --mainFontFamily: Outfit, sans-serif;
+}
+
+/* General options */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--mainFontFamily);
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--VeryDarkBlueMainBG);
+  color: var(--White);
+}
+
+.accent-text {
+  color: var(--accentTextColor);
+}
+
+/* Main block */
+
+#main-block {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: auto;
+  padding: 15px;
+  background-color: var(--VeryDarkBlueCardBG);
+  border-radius: 10px;
+}
+
+#main-block > * {
+  margin: 10px;
+}
+
+/* Equilibrium image section */
+
+.main-ETH-image {
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.main-ETH-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--accentHoverColor);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+.main-ETH-image img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.main-ETH-image:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.main-ETH-image:hover::before {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  /* margin: 20px 10px; */
+}
+
+h1:hover {
+  color: var(--accentHoverColor);
+  cursor: pointer;
+}
+
+.line {
+  border: 1px solid var(--VeryDarkBlueLine);
+  max-width: 100%;
+}
+
+.main-text {
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-container .price-span {
+  color: var(--accentHoverColor);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price img {
+  margin-right: 8px;
+}
+
+.time-left {
+  display: flex;
+  align-items: center;
+}
+
+.time-left img {
+  margin-right: 8px;
+}
+
+/* author section / card footer section */
+
+.author-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.author-card img {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.author-name:hover {
+  color: var(--accentHoverColor);
+  cursor: pointer;
+}
+
+/* aside / attribution  section  */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--AttributionColor);
+}
+
+/* Media Queries for mobile screens */
+
+@media only screen and (max-width: 451px) {
+  body {
+    padding: 0 20px;
+  }
+
+  #main-block {
+    width: 100%;
+    padding: 10px;
+  }
+}
