@@ -18,11 +18,11 @@ Users should be able to view the optimal layout for the site depending on their 
 
 ## Screenshot
 
-![](/images/Screenshot.png)
+![](./images/Screenshot.png)
 
 ## Links
 
-[Testimonials Grid Section Page](https://axinitm.github.io/FM-NFT-preview-card/)
+[Testimonials Grid Section Page](https://axinitm.github.io/FM-Testimonials-grid-section/)
 
 ## Built with
 
