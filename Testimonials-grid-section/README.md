@@ -3,13 +3,12 @@
 This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7).
 
 ## Table of contents
-- [Testimonials grid section solution](#testimonials-grid-section-solution)
-  - [Table of contents](#table-of-contents)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-  - [Built with](#built-with)
-  - [Author](#author)
+- [Table of contents](#table-of-contents)
+- [The challenge](#the-challenge)
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [Built with](#built-with)
+- [Author](#author)
 
 
 ## The challenge
