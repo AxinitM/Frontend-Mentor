@@ -30,3 +30,7 @@ Users should be able to view the optimal layout for the site depending on their 
 - Mobile-first workflow
 
 ## Author
+
+- My page - [Andrei Martinenko](https://www.frontender.biz/)
+- Frontend Mentor - [@AxinitM](https://www.frontendmentor.io/profile/AxinitM)
+
