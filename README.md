@@ -1,7 +1,6 @@
-Hello, everyone! My name is Andrew Martynenko (Andrei Martinenko), and I am a beginner frontender. 
+Hello, everyone! My name is Andrew Martynenko (Andrei Martinenko), and I am a beginner frontend developer.
 
-Willing to listen to any feedback. Especially comments and suggestions on how to improve the code. If you have critical remarks, I am ready for them too. 
-I like when people criticise my work reasonably, such criticism makes me better ;)
+I'm open to all feedback, especially comments and suggestions on how to improve my code. If you have any critical remarks, I’m ready for them too. I appreciate constructive criticism, as it helps me grow and improve. 😉
 
 This folder contains my solutions for [Frontend Mentor site challenges](https://www.frontendmentor.io). 
 
